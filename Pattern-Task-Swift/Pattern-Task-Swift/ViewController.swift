@@ -40,22 +40,22 @@ class ViewController: UIViewController, UISearchBarDelegate, UITableViewDelegate
 	
 	func prepareUI()
 	{
-		self.view.backgroundColor = UIColor.white;
+		self.view.backgroundColor = UIColor.white
 		//Отступ сверху для навигейшн бара
 		let topInset: CGFloat = (self.navigationController?.navigationBar.frame.maxY)!
-		let screenHeight: CGFloat = UIScreen.main.bounds.size.height;
-		let screenWidth: CGFloat = UIScreen.main.bounds.size.width;
+		let screenHeight: CGFloat = UIScreen.main.bounds.size.height
+		let screenWidth: CGFloat = UIScreen.main.bounds.size.width
 		
 		//Инициализация серч бара
-		let searchBarHeight: CGFloat = 50;
+		let searchBarHeight: CGFloat = 50
 		searchBar = UISearchBar(frame: CGRect(x: 0, y: topInset, width: screenWidth, height: searchBarHeight))
 		searchBar.placeholder = "Введите слово для поиска (англ.)"
-		searchBar.delegate = self;
+		searchBar.delegate = self
 		self.view.addSubview(searchBar)
 		
 		self.tableView = UITableView(frame: CGRect(x: 0, y: self.searchBar.frame.maxY, width: screenWidth, height: screenHeight - searchBarHeight) , style: UITableView.Style.plain)
-		self.tableView.dataSource = self;
-		self.tableView.delegate = self;
+		self.tableView.dataSource = self
+		self.tableView.delegate = self
 		self.view.addSubview(tableView)
 	}
 	
@@ -90,7 +90,6 @@ class ViewController: UIViewController, UISearchBarDelegate, UITableViewDelegate
 	
 	func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int
 	{
-		//return self.wordModel?.definitions.count ?? 0
 		return (self.wordModel?.definitions.count ?? 0) + self.imagesArray.count
 	}
 	
@@ -114,7 +113,7 @@ class ViewController: UIViewController, UISearchBarDelegate, UITableViewDelegate
 		{
 			let cell = tableView.dequeueReusableCell(withIdentifier: ImageTableViewCell.description(), for: indexPath) as! ImageTableViewCell
 			let shift = self.wordModel?.definitions.count ?? 0
-			cell.customImageView.image = self.imagesArray[indexPath.row - shift];
+			cell.customImageView.image = self.imagesArray[indexPath.row - shift]
 			return cell
 		}
 	}
@@ -133,7 +132,7 @@ class ViewController: UIViewController, UISearchBarDelegate, UITableViewDelegate
 		else
 		{
 			//Для ячейки с картинкой 250 и по 8 границы
-			return 250+16;
+			return 250+16
 		}
 	}
 	

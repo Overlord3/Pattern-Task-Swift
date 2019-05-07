@@ -62,7 +62,7 @@ class NetworkService: NSObject ,NetworkServiceInputProtocol, URLSessionDelegate
 					decoder.dateDecodingStrategy = .formatted(formatter)
 					
 					let networkData = try decoder.decode(DefinitionNetworkModel.self, from: data)
-					wordModel.definitions = networkData.list;
+					wordModel.definitions = networkData.list
 				
 					// Отправим сообщение с данными на главный поток, для обновления UI
 					DispatchQueue.main.async {

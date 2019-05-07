@@ -12,21 +12,22 @@ import UIKit
 
 class ImageTableViewCell: UITableViewCell
 {
-	var customImageView = UIImageView()
+	var customImageView = UIImageView() /**< UI для картинки */
 	
+	/**
+	Расстановка элементов UI в ячейке
+	*/
 	override func layoutSubviews()
 	{
 		super.layoutSubviews()
-		
 		//Всего высота - 250
-		let height: CGFloat = 250+16;
-		let width: CGFloat = self.bounds.size.width;
-		let leftRightBorder: CGFloat = (width - 250)/2;
-		let border: CGFloat = 8;
+		let height: CGFloat = 250+16
+		let width: CGFloat = self.bounds.size.width
+		let leftRightBorder: CGFloat = (width - 250)/2
+		let border: CGFloat = 8
 		
 		self.customImageView.frame =  CGRect(x: leftRightBorder, y: border, width: width - leftRightBorder*2, height: height - border*2)
-		self.customImageView.backgroundColor = UIColor.red;
+		self.customImageView.backgroundColor = UIColor.red
 		self.contentView.addSubview(self.customImageView)
 	}
-	
 }

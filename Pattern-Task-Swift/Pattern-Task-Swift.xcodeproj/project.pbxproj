@@ -17,6 +17,15 @@
 		FAEFE6AD228181040026FDCE /* WordModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAEFE6AC228181040026FDCE /* WordModel.swift */; };
 		FAEFE6AF228181470026FDCE /* DefinitionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAEFE6AE228181470026FDCE /* DefinitionModel.swift */; };
 		FAEFE6B1228181FD0026FDCE /* ImageRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAEFE6B0228181FD0026FDCE /* ImageRequest.swift */; };
+		FAEFE6B3228182D80026FDCE /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAEFE6B2228182D80026FDCE /* NetworkService.swift */; };
+		FAEFE6B5228182F40026FDCE /* NetworkServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAEFE6B4228182F40026FDCE /* NetworkServiceProtocol.swift */; };
+		FAEFE6B8228193830026FDCE /* DefinitionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAEFE6B7228193830026FDCE /* DefinitionTableViewCell.swift */; };
+		FAEFE6BA2281962A0026FDCE /* ImageTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAEFE6B92281962A0026FDCE /* ImageTableViewCell.swift */; };
+		FAEFE6BC22819A630026FDCE /* DefinitionNetworkModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAEFE6BB22819A630026FDCE /* DefinitionNetworkModel.swift */; };
+		FAEFE6BE22819D390026FDCE /* NetworkHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAEFE6BD22819D380026FDCE /* NetworkHelper.swift */; };
+		FAEFE6C022819E280026FDCE /* FlickerNetworkModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAEFE6BF22819E280026FDCE /* FlickerNetworkModel.swift */; };
+		FAEFE6C422819F390026FDCE /* PhotosModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAEFE6C322819F390026FDCE /* PhotosModel.swift */; };
+		FAEFE6C622819F910026FDCE /* PhotoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAEFE6C522819F910026FDCE /* PhotoModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +62,15 @@
 		FAEFE6AC228181040026FDCE /* WordModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordModel.swift; sourceTree = "<group>"; };
 		FAEFE6AE228181470026FDCE /* DefinitionModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefinitionModel.swift; sourceTree = "<group>"; };
 		FAEFE6B0228181FD0026FDCE /* ImageRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageRequest.swift; sourceTree = "<group>"; };
+		FAEFE6B2228182D80026FDCE /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
+		FAEFE6B4228182F40026FDCE /* NetworkServiceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkServiceProtocol.swift; sourceTree = "<group>"; };
+		FAEFE6B7228193830026FDCE /* DefinitionTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefinitionTableViewCell.swift; sourceTree = "<group>"; };
+		FAEFE6B92281962A0026FDCE /* ImageTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageTableViewCell.swift; sourceTree = "<group>"; };
+		FAEFE6BB22819A630026FDCE /* DefinitionNetworkModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefinitionNetworkModel.swift; sourceTree = "<group>"; };
+		FAEFE6BD22819D380026FDCE /* NetworkHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkHelper.swift; sourceTree = "<group>"; };
+		FAEFE6BF22819E280026FDCE /* FlickerNetworkModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlickerNetworkModel.swift; sourceTree = "<group>"; };
+		FAEFE6C322819F390026FDCE /* PhotosModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotosModel.swift; sourceTree = "<group>"; };
+		FAEFE6C522819F910026FDCE /* PhotoModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -137,6 +155,7 @@
 		FAEFE6A9228180EA0026FDCE /* View */ = {
 			isa = PBXGroup;
 			children = (
+				FAEFE6B62281936F0026FDCE /* TableViewCell */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -144,6 +163,9 @@
 		FAEFE6AA228180F00026FDCE /* Service */ = {
 			isa = PBXGroup;
 			children = (
+				FAEFE6B4228182F40026FDCE /* NetworkServiceProtocol.swift */,
+				FAEFE6B2228182D80026FDCE /* NetworkService.swift */,
+				FAEFE6BD22819D380026FDCE /* NetworkHelper.swift */,
 			);
 			name = Service;
 			sourceTree = "<group>";
@@ -151,11 +173,40 @@
 		FAEFE6AB228180F50026FDCE /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				FAEFE6AC228181040026FDCE /* WordModel.swift */,
-				FAEFE6AE228181470026FDCE /* DefinitionModel.swift */,
-				FAEFE6B0228181FD0026FDCE /* ImageRequest.swift */,
+				FAEFE6C222819F1C0026FDCE /* Flickr */,
+				FAEFE6C122819F120026FDCE /* Urban */,
 			);
 			name = Model;
+			sourceTree = "<group>";
+		};
+		FAEFE6B62281936F0026FDCE /* TableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				FAEFE6B7228193830026FDCE /* DefinitionTableViewCell.swift */,
+				FAEFE6B92281962A0026FDCE /* ImageTableViewCell.swift */,
+			);
+			name = TableViewCell;
+			sourceTree = "<group>";
+		};
+		FAEFE6C122819F120026FDCE /* Urban */ = {
+			isa = PBXGroup;
+			children = (
+				FAEFE6AC228181040026FDCE /* WordModel.swift */,
+				FAEFE6AE228181470026FDCE /* DefinitionModel.swift */,
+			);
+			name = Urban;
+			sourceTree = "<group>";
+		};
+		FAEFE6C222819F1C0026FDCE /* Flickr */ = {
+			isa = PBXGroup;
+			children = (
+				FAEFE6B0228181FD0026FDCE /* ImageRequest.swift */,
+				FAEFE6BB22819A630026FDCE /* DefinitionNetworkModel.swift */,
+				FAEFE6BF22819E280026FDCE /* FlickerNetworkModel.swift */,
+				FAEFE6C322819F390026FDCE /* PhotosModel.swift */,
+				FAEFE6C522819F910026FDCE /* PhotoModel.swift */,
+			);
+			name = Flickr;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -288,12 +339,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FAEFE6C422819F390026FDCE /* PhotosModel.swift in Sources */,
+				FAEFE6B8228193830026FDCE /* DefinitionTableViewCell.swift in Sources */,
+				FAEFE6C022819E280026FDCE /* FlickerNetworkModel.swift in Sources */,
+				FAEFE6C622819F910026FDCE /* PhotoModel.swift in Sources */,
 				FAEFE67B228180AC0026FDCE /* ViewController.swift in Sources */,
 				FAEFE6B1228181FD0026FDCE /* ImageRequest.swift in Sources */,
 				FAEFE681228180AC0026FDCE /* Pattern_Task_Swift.xcdatamodeld in Sources */,
+				FAEFE6BE22819D390026FDCE /* NetworkHelper.swift in Sources */,
 				FAEFE679228180AC0026FDCE /* AppDelegate.swift in Sources */,
+				FAEFE6BC22819A630026FDCE /* DefinitionNetworkModel.swift in Sources */,
+				FAEFE6B5228182F40026FDCE /* NetworkServiceProtocol.swift in Sources */,
 				FAEFE6AD228181040026FDCE /* WordModel.swift in Sources */,
+				FAEFE6BA2281962A0026FDCE /* ImageTableViewCell.swift in Sources */,
 				FAEFE6AF228181470026FDCE /* DefinitionModel.swift in Sources */,
+				FAEFE6B3228182D80026FDCE /* NetworkService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

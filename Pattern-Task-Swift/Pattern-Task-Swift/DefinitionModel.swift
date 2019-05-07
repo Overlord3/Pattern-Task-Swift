@@ -8,8 +8,15 @@
 
 import Foundation
 
-class DefinitionModel
+struct DefinitionModel : Codable
 {
+	enum CodingKeys: String, CodingKey {
+		case definition
+		case author
+		case example
+		case date = "written_on"
+	}
+	
 	let definition: String
 	let author: String
 	let date: Date

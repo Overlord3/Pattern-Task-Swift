@@ -6,11 +6,12 @@
 //  Copyright © 2019 Alex. All rights reserved.
 //
 
+
 import UIKit
+
 
 class DefinitionTableViewCell : UITableViewCell
 {
-	
 	var definitionLabel = UILabel()
 	var authorLabel = UILabel()
 	var exampleLabel = UILabel()

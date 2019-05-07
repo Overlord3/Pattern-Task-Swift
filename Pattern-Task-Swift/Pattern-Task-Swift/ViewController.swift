@@ -159,7 +159,7 @@ class ViewController: UIViewController, UISearchBarDelegate, UITableViewDelegate
 	
 	func setArraySize(count: Int)
 	{
-		for _ in 0..<count
+		while self.imagesArray.count < count
 		{
 			self.imagesArray.append(UIImage())
 		}
@@ -181,6 +181,5 @@ class ViewController: UIViewController, UISearchBarDelegate, UITableViewDelegate
 			self.imagesArray[number] = image!
 		}
 		self.tableView.reloadData()
-		
 	}
 }

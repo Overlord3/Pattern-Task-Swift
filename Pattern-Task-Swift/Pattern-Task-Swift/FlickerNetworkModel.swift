@@ -12,8 +12,8 @@ struct FlickerNetworkModel : Codable
 {
 	enum CodingKeys: String, CodingKey {
 		case stat
-		//case photos
+		case photos
 	}
-	var stat: Bool
-	//var photos: PhotosModel
+	var stat: String
+	var photos: PhotosModel
 }

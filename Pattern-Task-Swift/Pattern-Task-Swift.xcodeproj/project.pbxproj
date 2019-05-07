@@ -191,6 +191,7 @@
 		FAEFE6C122819F120026FDCE /* Urban */ = {
 			isa = PBXGroup;
 			children = (
+				FAEFE6BB22819A630026FDCE /* DefinitionNetworkModel.swift */,
 				FAEFE6AC228181040026FDCE /* WordModel.swift */,
 				FAEFE6AE228181470026FDCE /* DefinitionModel.swift */,
 			);
@@ -201,7 +202,6 @@
 			isa = PBXGroup;
 			children = (
 				FAEFE6B0228181FD0026FDCE /* ImageRequest.swift */,
-				FAEFE6BB22819A630026FDCE /* DefinitionNetworkModel.swift */,
 				FAEFE6BF22819E280026FDCE /* FlickerNetworkModel.swift */,
 				FAEFE6C322819F390026FDCE /* PhotosModel.swift */,
 				FAEFE6C522819F910026FDCE /* PhotoModel.swift */,

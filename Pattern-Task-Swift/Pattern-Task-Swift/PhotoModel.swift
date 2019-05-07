@@ -16,7 +16,7 @@ struct PhotoModel: Codable
 		case id
 		case secret
 	}
-	var farm: String
+	var farm: Int
 	var server: String
 	var id: String
 	var secret: String

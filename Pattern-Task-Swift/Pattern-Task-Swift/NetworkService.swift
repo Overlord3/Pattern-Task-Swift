@@ -130,9 +130,9 @@ class NetworkService: NSObject ,NetworkServiceInputProtocol, URLSessionDelegate
 			do {
 				let networkData = try JSONDecoder().decode(FlickerNetworkModel.self, from: data)
 				
-				if networkData.stat
+				if networkData.stat == "ok"
 				{
-					let photos: [PhotoModel] = []//networkData.photos.photo
+					let photos: [PhotoModel] = networkData.photos.photo
 					// Отсюда отправим сообщение на обновление UI с главного потока
 					DispatchQueue.main.async {
 						self.outputDelegate?.prepareArrayForImagesCount(count: photos.count)

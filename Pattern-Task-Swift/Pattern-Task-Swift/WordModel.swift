@@ -9,6 +9,7 @@
 
 import Foundation
 
+
 struct WordModel
 {
 	var word: String

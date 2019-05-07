@@ -6,7 +6,9 @@
 //  Copyright © 2019 Alex. All rights reserved.
 //
 
+
 import Foundation
+
 
 struct DefinitionNetworkModel: Codable
 {

@@ -10,7 +10,8 @@
 import UIKit
 
 
-class ViewController: UIViewController, UISearchBarDelegate, UITableViewDelegate, UITableViewDataSource, NetworkServiceOutputProtocol {
+class ViewController: UIViewController, UISearchBarDelegate, UITableViewDelegate, UITableViewDataSource, NetworkServiceOutputProtocol
+{
 
 	var tableView: UITableView!
 	var searchBar: UISearchBar!

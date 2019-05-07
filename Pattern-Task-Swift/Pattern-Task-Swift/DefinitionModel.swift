@@ -6,11 +6,14 @@
 //  Copyright © 2019 Alex. All rights reserved.
 //
 
+
 import Foundation
+
 
 struct DefinitionModel : Codable
 {
-	enum CodingKeys: String, CodingKey {
+	enum CodingKeys: String, CodingKey
+	{
 		case definition
 		case author
 		case example

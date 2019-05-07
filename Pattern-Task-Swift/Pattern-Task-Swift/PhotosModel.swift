@@ -6,12 +6,16 @@
 //  Copyright © 2019 Alex. All rights reserved.
 //
 
+
 import Foundation
+
 
 struct PhotosModel : Codable
 {
-	enum CodingKeys: String, CodingKey {
+	enum CodingKeys: String, CodingKey
+	{
 		case photo
 	}
+	
 	var photo: [PhotoModel]
 }

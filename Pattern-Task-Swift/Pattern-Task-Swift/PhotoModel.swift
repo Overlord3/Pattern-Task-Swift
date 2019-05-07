@@ -6,16 +6,20 @@
 //  Copyright © 2019 Alex. All rights reserved.
 //
 
+
 import Foundation
+
 
 struct PhotoModel: Codable
 {
-	enum CodingKeys: String, CodingKey {
+	enum CodingKeys: String, CodingKey
+	{
 		case farm
 		case server
 		case id
 		case secret
 	}
+	
 	var farm: Int
 	var server: String
 	var id: String
@@ -28,5 +32,4 @@ struct PhotoModel: Codable
 	{
 		return "https://farm\(farm).staticflickr.com/\(server)/\(id)_\(secret).jpg"
 	}
-
 }

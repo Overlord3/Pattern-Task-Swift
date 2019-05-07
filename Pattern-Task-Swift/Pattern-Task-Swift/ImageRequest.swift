@@ -12,8 +12,8 @@ import Foundation
 
 class ImageRequest
 {
-	let urlString: String
-	let number: Int
+	let urlString: String /**< URL запрос к сервису в строке */
+	let number: Int /**< Номер изображения */
 	
 	/**
 	Инициализатор модели запроса

@@ -12,10 +12,13 @@ import Foundation
 
 struct PhotosModel : Codable
 {
+	/// Ключи для декодирования данных из JSON
+	///
+	/// - photo: структура, содержащие ссылки на картинки
 	enum CodingKeys: String, CodingKey
 	{
 		case photo
 	}
 	
-	var photo: [PhotoModel]
+	var photo: [PhotoModel] /**< Модель с ссылкой на картинку */
 }

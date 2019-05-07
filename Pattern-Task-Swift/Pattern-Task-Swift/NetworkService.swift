@@ -10,7 +10,7 @@ import Foundation
 
 class NetworkService: NSObject ,NetworkServiceInputProtocol, URLSessionDelegate
 {
-	let imagePerPage = 10
+	let imagePerPage = 10 /**< Количество картинок на странице при подгрузке */
 	
 	var urlSession: URLSession /**< Сессия */
 	var downloadTasksArray: Array<URLSessionDownloadTask> = [] /**< Массив для заданий подгрузки картинок, нужен для отмены заданий */
@@ -76,7 +76,12 @@ class NetworkService: NSObject ,NetworkServiceInputProtocol, URLSessionDelegate
 		dataTask.resume()
 	}
 
+	/**
+	Загружает изображение по запросу
 	
+	@param request Модель запроса
+	@param number Номер изображения, для View потом нужен
+	*/
 	func loadImageFromRequest(request: ImageRequest, number: Int)
 	{
 		let url = URL(string: request.urlString)!
@@ -84,7 +89,6 @@ class NetworkService: NSObject ,NetworkServiceInputProtocol, URLSessionDelegate
 			do
 			{
 				let data = try Data.init(contentsOf: location!)
-				
 				// Отправим сообщение с данными на главный поток, для обновления UI
 				DispatchQueue.main.async {
 					self.outputDelegate?.loadingImageFinishedWith(imageData: data, number: number)
@@ -93,8 +97,6 @@ class NetworkService: NSObject ,NetworkServiceInputProtocol, URLSessionDelegate
 			catch let error as NSError {
 				print("Failed to load: \(error.localizedDescription)")
 			}
-		
-			
 		}
 		self.downloadTasksArray.append(downloadTask)
 		downloadTask.resume()
@@ -112,7 +114,12 @@ class NetworkService: NSObject ,NetworkServiceInputProtocol, URLSessionDelegate
 		self.downloadTasksArray.removeAll()
 	}
 	
+	/**
+	Поиск изображений в сервисе
 	
+	@param searchSrting Строка поиска, на английском обязательно
+	@param page Номер страницы, с 1
+	*/
 	func searchImagesForString(searchString: String, page: Int)
 	{
 		//Отменим все текущие загрузки, если они есть

@@ -12,6 +12,13 @@ import Foundation
 
 struct DefinitionModel : Codable
 {
+	
+	/// Ключи для декодирования из JSON в объекты
+	///
+	/// - definition: Определение слова
+	/// - author: Автор определения
+	/// - example: Пример использования
+	/// - date: Дата определения
 	enum CodingKeys: String, CodingKey
 	{
 		case definition
@@ -20,10 +27,10 @@ struct DefinitionModel : Codable
 		case date = "written_on"
 	}
 	
-	let definition: String
-	let author: String
-	let date: Date
-	let example: String
+	let definition: String /**< Определение слова */
+	let author: String /**< Автор определения */
+	let date: Date /**< Дата определения */
+	let example: String /**< Пример использования */
 	
 	/**
 	Инициализатор модели определения

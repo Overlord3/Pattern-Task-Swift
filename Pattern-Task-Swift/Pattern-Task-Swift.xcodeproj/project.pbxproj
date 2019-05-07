@@ -121,11 +121,10 @@
 		FAEFE677228180AC0026FDCE /* Pattern-Task-Swift */ = {
 			isa = PBXGroup;
 			children = (
-				FAEFE6AB228180F50026FDCE /* Model */,
-				FAEFE6AA228180F00026FDCE /* Service */,
-				FAEFE6A9228180EA0026FDCE /* View */,
 				FAEFE678228180AC0026FDCE /* AppDelegate.swift */,
-				FAEFE67A228180AC0026FDCE /* ViewController.swift */,
+				FAEFE6AA228180F00026FDCE /* Service */,
+				FAEFE6AB228180F50026FDCE /* Model */,
+				FAEFE6A9228180EA0026FDCE /* View */,
 				FAEFE682228180AC0026FDCE /* Assets.xcassets */,
 				FAEFE684228180AD0026FDCE /* LaunchScreen.storyboard */,
 				FAEFE687228180AD0026FDCE /* Info.plist */,
@@ -156,6 +155,7 @@
 			isa = PBXGroup;
 			children = (
 				FAEFE6B62281936F0026FDCE /* TableViewCell */,
+				FAEFE67A228180AC0026FDCE /* ViewController.swift */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -192,8 +192,8 @@
 			isa = PBXGroup;
 			children = (
 				FAEFE6BB22819A630026FDCE /* DefinitionNetworkModel.swift */,
-				FAEFE6AC228181040026FDCE /* WordModel.swift */,
 				FAEFE6AE228181470026FDCE /* DefinitionModel.swift */,
+				FAEFE6AC228181040026FDCE /* WordModel.swift */,
 			);
 			name = Urban;
 			sourceTree = "<group>";

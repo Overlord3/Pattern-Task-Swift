@@ -24,6 +24,5 @@ class NetworkHelper
 		//Ключ работает, проверено
 		let APIkey = "5553e0626e5d3a905df9a76df1383d98"
 		return "https://api.flickr.com/services/rest/?method=flickr.photos.search&api_key=\(APIkey)&tags=\(searchString)&per_page=10&format=json&nojsoncallback=1&page=\(page)"
-		
 	}
 }

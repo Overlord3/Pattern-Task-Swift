@@ -12,9 +12,15 @@ import Foundation
 
 struct WordModel
 {
-	var word: String
-	var definitions: [DefinitionModel] = []
+	var word: String  /**< Основное слово */
+	var definitions: [DefinitionModel] = [] /**< Массив определений для слова */
 	
+	/**
+	Инициализатор для модели слова
+	
+	@param word основное слово, которое искали
+	@return экземпляр класса
+	*/
 	init(word: String)
 	{
 		self.word = word

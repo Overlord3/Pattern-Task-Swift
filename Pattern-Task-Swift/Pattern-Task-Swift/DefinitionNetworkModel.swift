@@ -12,5 +12,5 @@ import Foundation
 
 struct DefinitionNetworkModel: Codable
 {
-	var list: [DefinitionModel] = []
+	var list: [DefinitionModel] = []  /**< Список определений, для декодирования из JSON */
 }
